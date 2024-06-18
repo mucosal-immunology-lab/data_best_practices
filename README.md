@@ -67,7 +67,7 @@ Be checked for data integrity (`md5 sum check`) and quality (`trim_galore` + `fa
 
 Prior to all pre-processing of sequencing data with their respective pipelines (e.g. dada2, Sunbeam, nf-core/rnaseq, or STARsolo), you must perform quality checks and read trimming to remove poor quality data.
 
-For this purpose, we provide the following [`run_trimgalore.py`](./run_trimgalore.py) Python script. The script will run paired-end TrimGalore (and subsequent FastQC reporting) on each `fastq.gz` sample pair in a given folder and output the results to a selected folder.
+For this purpose, we provide the following [`run_trimgalore.py`](./scripts/run_trimgalore.py) Python script. The script will run paired-end TrimGalore (and subsequent FastQC reporting) on each `fastq.gz` sample pair in a given folder and output the results to a selected folder.
 
 First, create a new mamba environment (Python >= 3.5).
 
@@ -90,7 +90,7 @@ You can also specify the following optional arguments:
 
 **Multi-threaded parallel script**
 
-Alternatively, you can try the multi-parallel script, [`run_trimgalore_parallel.py`](./run_trimgalore_parallel.py), which will run multiple samples in parallel while also providing multiple cores to each iteration of TrimGalore **(experimental)**. While you can provide a number of threads to the command line, the script will automatically determine the number of available threads, and use this value.
+Alternatively, you can try the multi-parallel script, [`run_trimgalore_parallel.py`](./scripts/run_trimgalore_parallel.py), which will run multiple samples in parallel while also providing multiple cores to each iteration of TrimGalore **(experimental)**. While you can provide a number of threads to the command line, the script will automatically determine the number of available threads, and use this value.
 
 Further, it will try to divide the number of available cores between samples while providing at least 4 cores to any one sample for TrimGalore.
 
