@@ -78,7 +78,7 @@ You can also specify the following optional arguments:
 
 **Multi-threaded parallel script**
 
-Alternatively, you can try the [multi-parallel script](./run_trimgalore_parallel.py) which will also run multiple samples in parallel while also providing multiple cores to each iteration of TrimGalore **(experimental)**. While you can provide a number of threads to the command line, the script will automatically determine the number of available threads, and use this value.
+Alternatively, you can try the multi-parallel script, [`run_trimgalore_parallel.py`](./run_trimgalore_parallel.py), which will run multiple samples in parallel while also providing multiple cores to each iteration of TrimGalore **(experimental)**. While you can provide a number of threads to the command line, the script will automatically determine the number of available threads, and use this value.
 
 Further, it will try to divide the number of available cores between samples while providing at least 4 cores to any one sample for TrimGalore.
 
