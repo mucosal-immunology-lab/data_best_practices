@@ -45,13 +45,13 @@ The dataset must be listed in the Google Drive [**Sequencing Data**](https://doc
 
 ### 3) Be checked for integrity and quality
 
-Be checked for data integrity (`md5 sum check`) and quality (`fastqc`).
+Be checked for data integrity (`md5 sum check`) and quality (`trim_galore` + `fastqc`).
 
 #### MD5 sum check
 
 *Script to be added.*
 
-#### FastQC quality check
+#### TrimGalore and FastQC quality check
 
 Prior to all pre-processing of sequencing data with their respective pipelines (e.g. dada2, Sunbeam, nf-core/rnaseq, or STARsolo), you must perform quality checks and read trimming to remove poor quality data.
 
