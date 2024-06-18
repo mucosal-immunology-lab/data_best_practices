@@ -2,6 +2,18 @@
 
 A guide to data storage best practices within the Mucosal Immunology Lab.
 
+- [Data best practices](#data-best-practices)
+  - [Data storage and location](#data-storage-and-location)
+    - [1) Store data on the Vault](#1-store-data-on-the-vault)
+      - [Convert raw sequencing data](#convert-raw-sequencing-data)
+      - [Transfer your data to Vault](#transfer-your-data-to-vault)
+      - [Transfer your data from Vault](#transfer-your-data-from-vault)
+    - [2) List dataset in the communal spreadsheet](#2-list-dataset-in-the-communal-spreadsheet)
+    - [3) Be checked for integrity and quality](#3-be-checked-for-integrity-and-quality)
+      - [MD5 sum check](#md5-sum-check)
+      - [TrimGalore and FastQC quality check](#trimgalore-and-fastqc-quality-check)
+
+
 ## Data storage and location
 
 All raw sequening data and LCMS data needs to meet the following requirements:
