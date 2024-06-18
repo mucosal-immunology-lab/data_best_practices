@@ -85,8 +85,8 @@ python3 run_trimgalore.py -i raw_fastq -o QC --threads 8
 
 You can also specify the following optional arguments:
 
-* `length` (default: 40): the minimum length of paired-end reads in order to be kept.
-* `quality` (default: 20): Phred score below which a read will be trimmed.
+* `--length` (default: 40): the minimum length of paired-end reads in order to be kept.
+* `--quality` (default: 20): Phred score below which a read will be trimmed.
 
 **Multi-threaded parallel script**
 
